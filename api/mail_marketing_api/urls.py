@@ -10,6 +10,8 @@ router.register(r"tasks",views.TaskViewSet, basename="Tasks")
 router.register(r"templates",views.TemplateViewSet, basename="Template")
 router.register(r"subscribers",views.SubscribersViewSet, basename="Subscribers")
 
+
+
 urlpatterns = [
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
